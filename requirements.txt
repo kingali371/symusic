@@ -4,7 +4,7 @@ ffmpeg-python
 py-tgcalls
 pyrogram==1.4.16
 youtube-search-python==1.4.9
-yt-dlp==2021.12.17
+yt-dlp==2021.11.10.1
 youtube-dl
 youtube-search
 python-dotenv
