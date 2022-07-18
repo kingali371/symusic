@@ -25,7 +25,7 @@ async def idsd(client: Client, message: Message):
                         name, url=f"https://t.me/{message.from_user.username}")
                 ],
                 [
-                    InlineKeyboardButton("اضف البوت  لمجموعتك ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                    InlineKeyboardButton("اصنع بوتك ❤", url=f"https://t.me/EITHON1/819"),
                 ],    
             ]
         ),
