@@ -7,7 +7,6 @@ from pyrogram.types import Message
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from config import (
     BOT_NAME,
-    BOT_USERNAME,
     BOT_PHOTO,
 )
 
@@ -42,7 +41,7 @@ async def nammes(client: Client, message: Message):
                         name, url=f"https://t.me/{message.from_user.username}")
                 ],
                 [
-                    InlineKeyboardButton("اضف البوت  لمجموعتك ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+                    InlineKeyboardButton("اصنع بوتك", url=f"https://t.me/EITHON1/819"),
                 ],    
             ]
         ),
