@@ -84,7 +84,7 @@ async def start_(client: Client, message: Message):
                         "‹ كروب الدعم › ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "‹ قناة السورس ›", url=f"https://t.me/EITHON1"
+                        "‹ لتنصيب بوت ›", url=f"https://t.me/EITHON1/819"
                     ),
                 ],
                 [
@@ -158,7 +158,7 @@ async def ping_pong(client: Client, message: Message):
     await m_reply.edit_text("🏓 `PONG!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
-@Client.on_message(command(["فحص", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["فحص", f"/uptime@{BOT_USERNAME}"]) & ~filters.edited)
 async def get_uptime(client: Client, message: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
