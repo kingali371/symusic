@@ -54,7 +54,7 @@ def updater():
     return bool(changelog)
 
 
-@Client.on_message(command(["برمجه", f"update@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["برمجه", "/update", f"/update@{BOT_USERNAME}"]) & ~filters.edited)
 @sudo_users_only
 async def update_repo(_, message: Message):
     chat_id = message.chat.id
@@ -68,7 +68,7 @@ async def update_repo(_, message: Message):
     await msg.edit(f"تم الترقية بواسطه سورس [Ξ𝗜𝗧𝗛𝗢𝗡™ ايثون](https://t.me/EITHON1)", disable_web_page_preview=True)
 
 
-@Client.on_message(command(["ريستارت", f"restart@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["ريستارت", "/restart", f"/restart@{BOT_USERNAME}"]) & ~filters.edited)
 @sudo_users_only
 async def restart_bot(_, message: Message):
     msg = await message.reply("`restarting bot...`")
