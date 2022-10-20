@@ -170,7 +170,7 @@ async def shellrunner(client, message):
         await edit_or_reply(message, text="`OUTPUT:`\n`no output`")
 
 
-@Client.on_message(command(["leavebot", f"خروج"]) & ~filters.edited)
+@Client.on_message(command(["/leavebot", f"خروج"]) & ~filters.edited)
 @sudo_users_only
 async def bot_leave_group(_, message):
     if len(message.command) != 2:
